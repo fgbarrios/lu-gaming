@@ -64,14 +64,69 @@ body {
 
 /* 
 ---------------------------------------------
-HEADER
+HEADER and Footer
 --------------------------------------------- 
 */
 
-header{
- /* to do */
+header, footer{
+  background-color: #0071f8;
 }
 
+header .container, footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+
+  max-width: 1200px;
+  margin-inline: auto;
+  width: 90vw;
+}
+
+header img{
+  max-width: 150px;
+  object-fit: cover;
+}
+
+header .nav{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+header .nav li a, footer p{
+  color:white;
+}
+
+footer p{
+  text-align: center;
+  margin-inline: auto;
+}
+
+header .nav li a{
+  padding: 0.5rem 1rem;
+}
+
+header .nav li a.active, header .nav li a:hover{
+  background-color: rgba(255, 255, 255, 0.10);
+  border-radius: 20px;
+ 
+}
+
+header .nav li a.button{
+  background-color: #ee626b;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+header .nav li a.button:hover{
+  background-color: #fd3b47;
+}
+
+footer{
+  display: none; 
+}
 
 /* 
 ---------------------------------------------
